@@ -1,0 +1,53 @@
+<!-- 100% match, 1035 characters  -->
+<div class="container">
+  <div class="large-circle"></div>
+  <div class="large-circle-lack"></div>
+  <div class="small-circle"></div>
+  <div class="small-circle-lack"></div>
+</div>
+
+<style>
+  body {
+    background: #EAC049;
+  }
+
+.large-circle {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background-color: #343D42;
+  border-radius: 50%;
+  top: 70px;
+  left: 120px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%); /* Cuts the bottom */
+}
+.large-circle-lack {
+  position: absolute;
+  top: 110px;
+  left: 200px;
+  width: 80px;
+  height: 80px;
+  background: #EAC049;
+  border-radius: 50%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%); /* Cuts the bottom */
+}
+.small-circle {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #343D42;
+  border-radius: 50%;
+  top: 110px;
+  left: 120px;
+  clip-path: circle(50% at 50% 50%);
+}
+  .small-circle-lack {
+  position: absolute;
+  top: 170px;
+  left: 140px;
+  width: 40px;
+  height: 40px;
+  background: #EAC049;
+  border-radius: 50%;
+}
+</style>
